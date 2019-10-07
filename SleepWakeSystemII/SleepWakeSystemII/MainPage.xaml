@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:SleepWakeSystemII.Views"
+             x:Class="SleepWakeSystemII.MainPage">
+
+    <TabbedPage.Children>
+        <NavigationPage Title="Set">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:SetView/>
+            </x:Arguments>
+        </NavigationPage>
+
+        <!--<NavigationPage Title="Browse">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:ItemsPage />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="About">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_about.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:AboutPage />
+            </x:Arguments>
+        </NavigationPage>-->
+    </TabbedPage.Children>
+</TabbedPage>
+
+<!--<ContentPage.Content>
+        <StackLayout Padding="30">
+            <StackLayout Orientation="Vertical" Spacing="5" Margin="10">
+                <Label Text="Postion:" />
+                <Slider x:Name="sliderPosition" />
+                <Label x:Name="lblPosition" />
+
+                <Button x:Name="btnPlay" Text="Play" BorderColor="Green" />
+                <Button x:Name="btnPause" Text="Pause" BorderColor="Blue" />
+                <Button x:Name="btnStop" Text="Stop" BorderColor="Red" />
+
+                <Label Text="Volume:" />
+                <Slider x:Name="sliderVolume" Minimum="0" Maximum="1"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>-->
+
+<!--</TabbedPage>-->

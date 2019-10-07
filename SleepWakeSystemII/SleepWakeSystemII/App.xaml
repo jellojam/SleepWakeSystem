@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SleepWakeSystemII.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String"
+                x:Key="Icons">
+                <On Platform="Android"
+            Value="materialdesignicons-webfont.ttf#Material Design Icons" />
+                <!--<On Platform="iOS"
+            Value="materialdesignicons-webfont" />
+                <On Platform="UWP"
+            Value="/Assets/materialdesignicons-webfont.ttf#Material Design Icons" />-->
+            </OnPlatform>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
